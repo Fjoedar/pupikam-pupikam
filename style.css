@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: burlywood;
+}
+
+main{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    text-transform: uppercase;
+}
+
+header, nav, section, footer{
+    background-color: darkgreen;
+    border: 2px solid rgb(16, 16, 16);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+section{
+    width: 68%;
+    float: left;
+}
+
+nav{
+    float:right;
+    width: 28%;
+}
+
+footer{
+    clear:both;
+}
+
+
+@media screen and (max-width:700px) {
+    nav, section{
+        float:none;
+        width: 100%;
+    }
+    
+
+}
