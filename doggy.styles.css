@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(247, 191, 118);
+    max-width: 1000px;
+    width: 80%;    
+    margin: auto; 
+    text-align: justify;
+}
+
+main{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    text-transform: uppercase;
+    height: 400px;
+    background-image: url(kepek/snoopy.jfif);
+}
+
+header, nav, section, footer{
+    background-color: rgb(89, 140, 197);
+    border: 2px solid rgb(247, 9, 88);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    margin-bottom: 20px;
+   
+}
+
+section{
+    width: 68%;
+    float: left;
+}
+
+nav{
+    float:right;
+    width: 28%;
+    
+    
+}
+
+footer{
+    clear:both;
+}
+
+
+@media screen and (max-width:700px) {
+    nav, section{
+        float:none;
+        width: 100%;
+    }
+    
+
+}
+ul{
+    list-style-type: none;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+ 
+}
+li{
+    text-align: justify;   /*a szöveg középen*/
+    padding: 5px;   /* padding a szöveg távolsága a border-től*/
+}
+h1,h2,h3{
+    color: blanchedalmond;
+    
+}
+table{
+    border-collapse: collapse;
+}
+tr, th{
+    border: solid 1px rgb(5, 161, 109);
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    
+}
+th{
+    padding-left: 10px;
+    border-top: 1px;
+    border-left: 2px solid rgb(5, 161,109);
+    background-color:rgba(0, 255, 0, 0.35)
+    
+}
