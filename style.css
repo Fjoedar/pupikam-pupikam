@@ -13,6 +13,9 @@ main{
     max-width: 1000px;
     width: 90%;
     margin: 0 auto;
+    animation-name: menu;
+    animation-duration: 1.2s;
+    animation-delay: 1s;
 }
 
 header{
@@ -47,7 +50,7 @@ header h2{
     left:50px;
     color: darkslategray;
     animation-name: headerh2;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes headerh2{
@@ -96,6 +99,21 @@ section p{
 nav{
     float:right;
     width: 28%;
+    animation-name: menu;
+    animation-duration: 1.2s;
+    animation-delay: 2.2s;
+}
+
+@keyframes menu{
+    0%{
+        box-shadow: 0 0 5px 5px black;
+    }
+    50%{
+        box-shadow: 0 0 15px 15px black;
+    }
+    100%{
+        box-shadow: 0 0 5px 5px black;
+    }
 }
 
 nav ul li{
