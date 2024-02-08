@@ -14,16 +14,29 @@ main{
 
 header{
     text-transform: uppercase;
+    background-image: url("https://www.secondechance.org/uploads/anim/631afc21cf4cc922882385.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+header h2{
+    position: absolute;
+    bottom: 20px;
+    left:50px;
 }
 
 header, nav, section, footer{
-    background-color: darkgreen;
-    border: 2px solid rgb(16, 16, 16);
+    background-color: rgb(179, 172, 140);
+    /*border: 2px solid rgb(16, 16, 16);*/
     padding: 10px;
     text-align: center;
     border-radius: 10px;
     color:white;
     margin-bottom: 20px;
+    box-shadow: 0 0 5px 5px rgb(96, 86, 86);
 }
 
 section{
@@ -71,13 +84,20 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-
+    background-color: azure;
+    color: brown;
 }
 
 li{
     text-align: center;   /*a szöveg középen*/
     padding: 5px;   /* padding a szöveg távolsága a border-től*/
 }
+
+table{
+    width: 90%;
+    margin: 10px auto;
+}
+
 table, tr,td,th{
     border:solid 5px burlywood;
     border-collapse: collapse;
