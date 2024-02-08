@@ -5,7 +5,6 @@
 body{
     background-color: burlywood;
     background-image: url("kepekCica/kicica.jpg");
-    background-repeat: ;
     background-size:10%;
 
 }
@@ -26,12 +25,42 @@ header{
     position: relative;
 }
 
+header h1{
+    animation-name: headerh1;
+    animation-duration: 1s;
+}
+
+@keyframes headerh1{
+    from{
+        margin-top: -200px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
 header h2{
     position: absolute;
     bottom: 20px;
     left:50px;
     color: darkslategray;
+    animation-name: headerh2;
+    animation-duration: 2s;
 }
+
+@keyframes headerh2{
+    from{
+        margin-left: -500px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
 
 header, nav, section, footer{
     background-color: rgb(179, 172, 140);
