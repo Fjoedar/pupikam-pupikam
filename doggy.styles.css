@@ -4,6 +4,7 @@
 
 body{
     background-color: rgb(247, 191, 118);
+    background-image: url(kepek/101dog.jpg);
     max-width: 1000px;
     width: 80%;    
     margin: auto; 
@@ -88,7 +89,7 @@ table{
 tr, th{
     border: solid 1px rgb(5, 161, 109);
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 1fr 1fr 2fr 1fr;
     
 }
 th{

@@ -151,9 +151,6 @@ nav ul li a{
     transition: background-color .5s, color .5s;
 }
 
-nav ul li a:hover{
-
-}
 
 li{
     text-align: center;   /*a szöveg középen*/
