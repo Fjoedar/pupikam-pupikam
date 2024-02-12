@@ -44,6 +44,16 @@ nav{
     
     
 }
+nav ul li a{
+    display: block;
+    padding: 10px;
+    background-color: rgb(247, 9, 88);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+}
 
 footer{
     clear:both;
@@ -61,13 +71,12 @@ footer{
 ul{
     list-style-type: none;
     padding: 5px;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+    
  
 }
 li{
-    text-align: justify;   /*a szöveg középen*/
-    padding: 5px;   /* padding a szöveg távolsága a border-től*/
+    text-align: justify;   
+    padding: 5px;   
 }
 h1,h2,h3{
     color: blanchedalmond;
