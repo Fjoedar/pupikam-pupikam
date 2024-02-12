@@ -99,3 +99,7 @@ th{
     background-color:rgba(0, 255, 0, 0.35)
     
 }
+footer{
+    height: 200px;
+    background-image: url(kepek/200.webp);
+}
