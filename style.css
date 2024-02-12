@@ -4,36 +4,116 @@
 
 body{
     background-color: burlywood;
+    background-image: url("kepekCica/kicica.jpg");
+    background-size:10%;
+
 }
 
 main{
     max-width: 1000px;
     width: 90%;
     margin: 0 auto;
+    animation-name: menu;
+    animation-duration: 1.2s;
+    animation-delay: 1s;
 }
 
 header{
     text-transform: uppercase;
+    background-image: url("https://www.secondechance.org/uploads/anim/631afc21cf4cc922882385.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
 }
 
+header h1{
+    animation-name: headerh1;
+    animation-duration: 1s;
+}
+
+@keyframes headerh1{
+    from{
+        margin-top: -200px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+header h2{
+    position: absolute;
+    bottom: 20px;
+    left:50px;
+    color: darkslategray;
+    animation-name: headerh2;
+    animation-duration: 1s;
+}
+
+@keyframes headerh2{
+    from{
+        margin-left: -500px;
+        opacity: 0;
+    }
+    to{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+
 header, nav, section, footer{
-    background-color: darkgreen;
-    border: 2px solid rgb(16, 16, 16);
+    background-color: rgb(179, 172, 140);
+    /*border: 2px solid rgb(16, 16, 16);*/
     padding: 10px;
     text-align: center;
     border-radius: 10px;
     color:white;
     margin-bottom: 20px;
+    box-shadow: 0 0 5px 5px rgb(96, 86, 86);
 }
 
 section{
     width: 68%;
     float: left;
+    padding: 20px;
+}
+
+section h3, p{
+    text-align: justify;
+}
+
+section h3{
+    color: darkslategray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section p{
+    color: darkslategray;
+    text-indent: 20px;
 }
 
 nav{
     float:right;
     width: 28%;
+    animation-name: menu;
+    animation-duration: 1.2s;
+    animation-delay: 2.2s;
+}
+
+@keyframes menu{
+    0%{
+        box-shadow: 0 0 5px 5px black;
+    }
+    50%{
+        box-shadow: 0 0 15px 15px black;
+    }
+    100%{
+        box-shadow: 0 0 5px 5px black;
+    }
 }
 
 nav ul li{
@@ -62,15 +142,16 @@ ul{
 nav ul li a{
     display: block;
     padding: 10px;
-    background-color: brown;
+    background-color: darkslategray;
     border-radius: 5px;
     text-decoration: none;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: azure;
+    transition: background-color .5s, color .5s;
 }
 
-nav, ul, li, a:hover{
+nav ul li a:hover{
 
 }
 
@@ -78,8 +159,14 @@ li{
     text-align: center;   /*a szöveg középen*/
     padding: 5px;   /* padding a szöveg távolsága a border-től*/
 }
+
+table{
+    width: 90%;
+    margin: 10px auto;
+}
+
 table, tr,td,th{
-    border:solid 5px burlywood;
+    border:solid 2px rgb(96, 96, 96);
     border-collapse: collapse;
 
 }
@@ -87,8 +174,14 @@ td img{
     width:100px;
 }
 
+td{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    background-color: azure;
+}
+
 th{
-    border-top: 0;
-    border-left: 2px dotted rosybrown;
-    background-color: rgb(15, 197, 15);
+    background-color: rgb(96, 96, 96);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
