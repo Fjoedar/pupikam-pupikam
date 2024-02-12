@@ -89,7 +89,7 @@ table{
 tr, th{
     border: solid 1px rgb(5, 161, 109);
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 2fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
     
 }
 th{
